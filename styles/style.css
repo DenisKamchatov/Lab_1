@@ -1,1 +1,76 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  padding: 0 2%;
+}
+
+.container__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.container__row_item {
+  max-width: 300px;
+  height: 100%;
+}
+
+.container__row_item img {
+  width: 100%;
+  height: 100%;
+}
+
+.container__row .center {
+  margin: 0 1%;
+}
+
+.container__row h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+}
+
+.container__row p {
+  font-size: 1.5vw;
+}
+
+.container__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__column_item {
+  max-width: 300px;
+  height: 100%;
+}
+
+.container__column_item img {
+  width: 100%;
+  height: 100%;
+}
+
+.container__column h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+}
+
+.container__column p {
+  font-size: 1.5vw;
+}
+/*# sourceMappingURL=style.css.map */
