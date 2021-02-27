@@ -10,54 +10,92 @@
 </head>
 
 <body>
+    <header>
+        <h1>Display: flex;</h1>
+        <h1>Камчатов Денис Сергеевич</h1>
+    </header>
     <div class="container">
-        <div class="container__row">
-            <div class="container__row_item">
-                <img src="./images/firstimage.jpg" alt="firstimage">
-                <h3>Row</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
-                    commodi!
-                </p>
+        <div class="container__block">
+            <div class="container__row">
+                <div class="container__row_item">
+                    <img src="./images/firstimage.jpg" alt="firstimage">
+                    <h3>Row</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
+                        commodi!
+                    </p>
+                </div>
+                <div class="container__row_item center">
+                    <img src="./images/secondimage.jpg" alt="secondimage">
+                    <h3>Row</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
+                        commodi!
+                    </p>
+                </div>
+                <div class="container__row_item">
+                    <img src="./images/thirdimage.jpg" alt="thirdimage">
+                    <h3>Row</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
+                        commodi!
+                    </p>
+                </div>
             </div>
-            <div class="container__row_item center">
-                <img src="./images/secondimage.jpg" alt="secondimage">
-                <h3>Row</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
-                    commodi!
-                </p>
-            </div>
-            <div class="container__row_item">
-                <img src="./images/thirdimage.jpg" alt="thirdimage">
-                <h3>Row</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
-                    commodi!
-                </p>
-            </div>
+            <button class="change-row" onclick="rowReverse()">Изменить направление</button>
         </div>
-        <div class="container__column">
-            <div class="container__column_item">
-                <img src="./images/firstimage.jpg" alt="firstimage">
-                <h3>Row</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
-                    commodi!
-                </p>
+        <div class="container__block">
+            <div class="container__column">
+                <div class="container__column_item">
+                    <img src="./images/firstimage.jpg" alt="firstimage">
+                    <h3>Column</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
+                        commodi!
+                    </p>
+                </div>
+                <div class="container__column_item">
+                    <img src="./images/secondimage.jpg" alt="secondimage">
+                    <h3>Column</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
+                        commodi!
+                    </p>
+                </div>
+                <div class="container__column_item">
+                    <img src="./images/thirdimage.jpg" alt="thirdimage">
+                    <h3>Column</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
+                        commodi!
+                    </p>
+                </div>
             </div>
-            <div class="container__column_item">
-                <img src="./images/secondimage.jpg" alt="secondimage">
-                <h3>Row</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
-                    commodi!
-                </p>
+            <button class="change-column" onclick="columnReverse()">Изменить направление</button>
+        </div>
+        <div class="container__block">
+            <div class="container__form">
+                <div class="container__form_image">
+                    <img src="./images/firstimage.jpg" alt="firstimage">
+                </div>
+                <div class="container__form_text">
+                    <h3>Вложенность</h3>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, veniam nobis omnis iste laborum
+                        fugiat porro deserunt quidem totam ullam blanditiis facere dolore. Recusandae, sequi assumenda
+                        ullam
+                        consectetur ea officiis?</span>
+                </div>
             </div>
-            <div class="container__column_item">
-                <img src="./images/thirdimage.jpg" alt="thirdimage">
-                <h3>Row</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad blanditiis aliquam sequi
-                    commodi!
-                </p>
+            <button class="orderChange" onclick="orderChange()">Изменить порядок</button>
+        </div>
+        <div class="container__blocksize">
+            <div class="container__blocksize_first" style="background-image: url('./images/firstimage.jpg');">
+                <p>flex-grow: 1;</p>
+            </div>
+            <div class="container__blocksize_second" style="background-image: url('./images/firstimage.jpg');">
+                <p>flex-grow: 1;</p>
+            </div>
+            <div class="container__blocksize_third" style="background-image: url('./images/firstimage.jpg');">
+                <p>flex-grow: 3;</p>
             </div>
         </div>
     </div>
+
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>
